@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fresno Auto Service — Concept Preview</title>
+<meta name="description" content="Concept website preview for Fresno Auto Service, 103 N Broadway St, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4f0e8; --ink:#16130f; --muted:#5d5649; --line:#d8d0c0;
+    --red:#b3261e; --red-ink:#fff; --card:#fffdf8;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.02em}
+
+  .preview{background:var(--ink);color:#e9e3d6;text-align:center;padding:8px 16px;font-size:13px}
+  .preview b{color:#fff}
+
+  header{border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+  .logo{font-weight:900;font-size:20px;letter-spacing:-.02em;text-decoration:none;line-height:1}
+  .logo small{display:block;font:500 11px/1.4 "IBM Plex Mono",monospace;color:var(--muted);letter-spacing:.04em}
+  .nav a.call{background:var(--red);color:var(--red-ink);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  .nav ul{display:flex;gap:24px;list-style:none;padding:0}
+  .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  .nav ul a:hover{color:var(--ink)}
+  @media (max-width:760px){.nav ul{display:none}}
+
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:64px}
+  .hero h1{font-weight:900;font-size:clamp(40px,6vw,68px);line-height:.98;letter-spacing:-.035em}
+  .hero h1 em{font-style:normal;color:var(--red)}
+  .hero p.lede{font-size:19px;color:var(--muted);margin:20px 0 28px;max-width:34ch}
+  .rating{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+  .stars{color:var(--red);letter-spacing:2px;font-size:18px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:17px}
+  .btn.primary{background:var(--red);color:#fff}
+  .btn.ghost{border:1.5px solid var(--ink)}
+  .btn:hover{transform:translateY(-1px)}
+  .hero figure{position:relative}
+  .hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
+  .hero figcaption{position:absolute;left:14px;bottom:14px;background:var(--card);padding:10px 14px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+  .hero figcaption strong{display:block;font-size:15px}
+  @media (max-width:860px){.hero{grid-template-columns:1fr;gap:32px;padding-top:36px;padding-bottom:44px}.hero figure img{aspect-ratio:4/3}}
+  @media (max-width:420px){.logo{font-size:17px}.logo small{display:none}.nav a.call{padding:9px 12px;font-size:15px}}
+
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  .eyebrow{color:var(--red);margin-bottom:10px;display:block}
+  h2{font-weight:900;font-size:clamp(30px,4vw,44px);letter-spacing:-.03em;line-height:1.05;margin-bottom:28px;max-width:20ch}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .svc{background:var(--card);padding:26px 24px}
+  .svc .n{color:var(--muted)}
+  .svc h3{font-size:20px;margin:8px 0 6px;letter-spacing:-.01em}
+  .svc p{color:var(--muted);font-size:15.5px}
+  @media (max-width:860px){.services{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.services{grid-template-columns:1fr}}
+
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  blockquote{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:14px}
+  blockquote p{font-size:17px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px}
+  @media (max-width:860px){.reviews{grid-template-columns:1fr}}
+
+  .shop{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .shop img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+  @media (max-width:640px){.shop{grid-template-columns:1fr}}
+
+  .visit{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:stretch}
+  .hours{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .hours table{width:100%;border-collapse:collapse;margin:14px 0 22px}
+  .hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+  .hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hours .today td{font-weight:700}
+  .addr{font-size:19px;font-weight:700;line-height:1.35}
+  iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:12px;filter:grayscale(.25)}
+  @media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+  .cta{background:var(--ink);color:#f4f0e8;border-radius:16px;padding:44px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .cta h2{margin:0;color:#fff}
+  footer{padding:36px 0 110px;color:var(--muted);font-size:14px}
+
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--red);color:#fff;text-align:center;padding:16px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:10}
+  @media (max-width:760px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+
+<div class="preview"><b>Concept preview</b> made for Fresno Auto Service. Not the official website and not affiliated with the business.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">Fresno Auto Service<small>103 N BROADWAY · DOWNTOWN FRESNO</small></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Hours &amp; location</a></li>
+    </ul>
+    <a class="call" href="tel:+15594417141">(559) 441-7141</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4.7</b> from 118 Google reviews</span></div>
+      <h1>Honest repairs, <em>done right</em> the first time.</h1>
+      <p class="lede">Diagnostics, A/C, brakes, tires and everyday maintenance in downtown Fresno, from Art and the team. Drop-ins welcome, even if you're just passing through.</p>
+      <div class="btns">
+        <a class="btn primary" href="tel:+15594417141">Call (559) 441-7141</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=103+N+Broadway+St,+Fresno,+CA+93701" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <figure>
+      <img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNx0Hib3p5ydwIOrhJj_zhKOg99OZDE93MaqDszVdSQEE5-_8GkBt5lBbuJK-3nlCwSFnCo8GC_kYCsZKxaMJ_ElxgiBvY4l5vkultNM7JA3sSviyzo_n5NRj-VjM1rS81VxRzhvsZBKB7=w900-h1200-k-no" alt="SUV up on a lift in the Fresno Auto Service bay">
+      <figcaption><strong>Open Mon–Sat</strong><span class="mono">8:00 AM – 5:30 PM</span></figcaption>
+    </figure>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <span class="eyebrow mono">WHAT WE FIX</span>
+      <h2>Everything your car needs, under one roof.</h2>
+      <div class="services">
+        <div class="svc"><span class="n mono">01</span><h3>Diagnostics</h3><p>Check engine light on? We find the real problem fast, then explain it in plain English before any work starts.</p></div>
+        <div class="svc"><span class="n mono">02</span><h3>A/C repair</h3><p>Fresno summers don't wait. Recharge, leak checks and compressor repairs, often same day.</p></div>
+        <div class="svc"><span class="n mono">03</span><h3>Brakes</h3><p>Pads, rotors, calipers and brake fluid. We tell you what's urgent and what can wait.</p></div>
+        <div class="svc"><span class="n mono">04</span><h3>Tires &amp; flats</h3><p>Flat repair, replacement, rotation and balancing to keep you rolling.</p></div>
+        <div class="svc"><span class="n mono">05</span><h3>Maintenance</h3><p>Oil changes, fluids, belts and filters on domestic, Asian and European cars.</p></div>
+        <div class="svc"><span class="n mono">06</span><h3>Road-trip rescue</h3><p>Broke down on the way through Fresno? Come in without an appointment and we'll get you back on the road.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <span class="eyebrow mono">FROM GOOGLE REVIEWS</span>
+      <h2>Why Fresno drivers keep coming back.</h2>
+      <div class="reviews">
+        <blockquote><p>“They actually FIX cars… and make HONEST recommendations about what services the customers need or doesn't need.”</p><cite>Kevin L. · ★★★★★</cite></blockquote>
+        <blockquote><p>“We lucked out big time today finding this place to fix the AC in our vehicle on super short notice.”</p><cite>Brad H. · ★★★★★</cite></blockquote>
+        <blockquote><p>“Came in last minute with no appointment… They found the problem quickly, were super knowledgeable, friendly.”</p><cite>Bennett S. · ★★★★★</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow mono">THE SHOP</span>
+      <h2>A real shop with real mechanics. No runaround.</h2>
+      <div class="shop">
+        <img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQPg4tHYH6vXVHwbXKhJnIsBYVYhhiuJgf9umuWooy6OASqaXpHF7kGi8tEoU9roWwPqoQM-yg90Ri7abcZKJFm0PbUTmetXQj-Rf9QhFdT-lAZJgIKjloixsmviQz_ftYEp97=w1000-h750-k-no" alt="Car in the service bay at Fresno Auto Service">
+        <img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/grass-cs/AABkmLfIB4eD4yYrQLUjlhULsozWwp7IyH1GS-JQAYmaydgWI8qK91rzx4d_KLn3sgUdVDBKlWysFhZTRznWsQHMS0fgjDtZgwiu5s1oyiPoWJWrv_F4-hjFo4_9cnkatQ5dq36LRMTbkWLY6ZvW=w1000-h750-k-no" alt="Inside the Fresno Auto Service workshop">
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit">
+      <div class="hours">
+        <span class="eyebrow mono">HOURS &amp; LOCATION</span>
+        <p class="addr">103 N Broadway St<br>Fresno, CA 93701</p>
+        <table id="hours">
+          <tr data-d="1"><td>Monday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>8:00 AM – 5:30 PM</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <a class="btn primary" href="tel:+15594417141">Call (559) 441-7141</a>
+      </div>
+      <iframe title="Map to Fresno Auto Service" loading="lazy" src="https://www.google.com/maps?q=103+N+Broadway+St,+Fresno,+CA+93701&output=embed"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta">
+        <h2>Car acting up? Call before it gets worse.</h2>
+        <a class="btn primary" href="tel:+15594417141">(559) 441-7141</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  © <span id="y"></span> Fresno Auto Service · 103 N Broadway St, Fresno, CA 93701 · (559) 441-7141<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+
+<a class="sticky-call" href="tel:+15594417141">Call now · (559) 441-7141</a>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>

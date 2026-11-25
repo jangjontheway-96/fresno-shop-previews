@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Transmission City Fresno — Concept Preview</title>
+<meta name="description" content="Concept website preview for Transmission City, 509 N Maple Ave, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#121417; --panel:#1b1e22; --line:#2c3036; --text:#eef0f2; --muted:#9aa1a9;
+    --amber:#f2a516; --amber-ink:#1a1204; --light:#f6f4ef; --light-ink:#1a1c1f; --light-muted:#5b6068;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.55 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .cond{font-family:"Barlow Condensed",Barlow,sans-serif;text-transform:uppercase;letter-spacing:.01em}
+
+  .preview{background:var(--amber);color:var(--amber-ink);text-align:center;padding:8px 16px;font-size:13px;font-weight:500}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(18,20,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;text-decoration:none;text-transform:uppercase;letter-spacing:.02em}
+  .logo span{color:var(--amber)}
+  .nav ul{display:flex;gap:26px;list-style:none;padding:0}
+  .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  .nav ul a:hover{color:var(--text)}
+  .nav .call{background:var(--amber);color:var(--amber-ink);font-weight:600;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  @media (max-width:780px){.nav ul{display:none}}
+  .logo{white-space:nowrap;line-height:1}
+  @media (max-width:420px){.logo{font-size:21px}.nav .call{padding:9px 12px;font-size:15px}}
+
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:72px}
+  .kicker{color:var(--amber);font-size:18px;font-weight:600;margin-bottom:14px}
+  h1{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(46px,7vw,86px);line-height:.92;letter-spacing:-.005em}
+  h1 .amber{color:var(--amber)}
+  .lede{color:var(--muted);font-size:19px;max-width:40ch;margin:22px 0 30px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:17px}
+  .btn.amber{background:var(--amber);color:var(--amber-ink)}
+  .btn.line{border:1.5px solid #4a5058}
+  .proof{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+  .proof div{border-left:2px solid var(--amber);padding-left:12px}
+  .proof b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:32px;line-height:1}
+  .proof span{color:var(--muted);font-size:14px}
+  .hero-img{position:relative}
+  .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  .badge{position:absolute;right:-8px;bottom:-14px;background:var(--light);color:var(--light-ink);border-radius:10px;padding:12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:230px}
+  .badge b{display:block;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:22px;line-height:1.05}
+  .badge span{font-size:14px;color:var(--light-muted)}
+  @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;padding-top:40px}.badge{right:10px}}
+
+  section{padding:72px 0}
+  h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.5vw,52px);line-height:.98;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:56ch;margin-bottom:34px}
+
+  .signs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .sign{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .sign .num{color:var(--amber);font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:22px}
+  .sign h3{font-size:18px;margin:6px 0 4px;font-weight:600}
+  .sign p{color:var(--muted);font-size:15px}
+  @media (max-width:880px){.signs{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.signs{grid-template-columns:1fr}}
+
+  .light{background:var(--light);color:var(--light-ink)}
+  .light .sub{color:var(--light-muted)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--light-ink)}
+  .svc{padding:24px 22px 26px 0;border-bottom:1px solid #d9d5cc}
+  .svc h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;line-height:1}
+  .svc p{color:var(--light-muted);margin-top:8px;font-size:15.5px;max-width:32ch}
+  @media (max-width:880px){.services{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.services{grid-template-columns:1fr}}
+
+  .fin{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .fin img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  .fin ul{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
+  .fin li{padding-left:28px;position:relative}
+  .fin li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:8px;border-left:3px solid var(--amber);border-bottom:3px solid var(--amber);transform:rotate(-45deg)}
+  @media (max-width:880px){.fin{grid-template-columns:1fr}}
+
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  blockquote{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+  blockquote p{font-size:17px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px}
+  blockquote cite b{color:var(--amber);letter-spacing:2px}
+  @media (max-width:880px){.reviews{grid-template-columns:1fr}}
+
+  .visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .addr{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 18px}
+  table{width:100%;border-collapse:collapse;margin-bottom:22px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right;color:var(--muted)}
+  tr.today td{color:var(--amber);font-weight:600}
+  iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:12px;filter:invert(.9) hue-rotate(180deg) saturate(.6)}
+  @media (max-width:880px){.visit{grid-template-columns:1fr}}
+
+  footer{border-top:1px solid var(--line);padding:32px 0 110px;color:var(--muted);font-size:14px}
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--amber);color:var(--amber-ink);text-align:center;padding:16px;border-radius:10px;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:30}
+  @media (max-width:780px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+
+<div class="preview">Concept preview made for Transmission City. Not the official website and not affiliated with the business.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">Transmission <span>City</span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#financing">Financing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="call" href="tel:+15592513300">(559) 251-3300</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Fresno's transmission specialists · 509 N Maple Ave</p>
+        <h1>Slipping, grinding<br>or no shifting?<br><span class="amber">Bring it to Tony.</span></h1>
+        <p class="lede">Tony, Tony Jr. and the crew diagnose and repair transmissions the dealership couldn't figure out, plus clutches, alignment and check engine lights. You'll know your options before we touch a thing.</p>
+        <div class="btns">
+          <a class="btn amber" href="tel:+15592513300">Call (559) 251-3300</a>
+          <a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=509+N+Maple+Ave,+Fresno,+CA+93702" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="proof">
+          <div><b>4.5★</b><span>Google rating</span></div>
+          <div><b>370+</b><span>customer reviews</span></div>
+          <div><b>Mon–Fri</b><span>7 AM – 4 PM</span></div>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SynX7gEsGOcmmsU59ZLPb5GRE35UzKEX2Ur4neX5Jp4_3xPiZUYdVvATzkY2M0SUw-sHmYfFI7swQemBVEyJfH7Ly7vf8lr2tWkfDgxmCY8HOHNgGwkZsgwNce2Y2ll6EFjPvy4BkHMqR1=w1100-h825-k-no" alt="Transmission City front lobby with 'No credit? We say yes!' sign">
+        <div class="badge"><b>No credit? We say yes.</b><span>Ask about payment options on bigger repairs.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Warning signs we fix every day</h2>
+      <p class="sub">Catching a transmission problem early is the difference between a repair and a rebuild. Call if you notice any of these.</p>
+      <div class="signs">
+        <div class="sign"><span class="num">01</span><h3>Slipping gears</h3><p>RPMs jump but the car doesn't pick up speed.</p></div>
+        <div class="sign"><span class="num">02</span><h3>Hard or late shifts</h3><p>Clunks, jerks or a long pause before it engages.</p></div>
+        <div class="sign"><span class="num">03</span><h3>Leaks or burnt smell</h3><p>Red fluid under the car or a hot, burnt odor.</p></div>
+        <div class="sign"><span class="num">04</span><h3>Warning lights</h3><p>Check engine or transmission light on the dash.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="light">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="sub">Cars, trucks and vans, automatic and manual. We explain every option before any work starts.</p>
+      <div class="services">
+        <div class="svc"><h3>Transmission diagnosis</h3><p>Computer scan and road test to pinpoint the problem, not guess at it.</p></div>
+        <div class="svc"><h3>Repair &amp; rebuilds</h3><p>Repair the part that failed, or rebuild when that's the smarter money.</p></div>
+        <div class="svc"><h3>Clutch replacement</h3><p>New clutches for manual cars and trucks.</p></div>
+        <div class="svc"><h3>Check engine light</h3><p>Diagnose and clear engine codes, then fix what caused them.</p></div>
+        <div class="svc"><h3>Alignment</h3><p>Straighten things out after the repair so tires wear evenly.</p></div>
+        <div class="svc"><h3>Transmission check-ups</h3><p>Follow-up inspections after a repair so you can drive worry-free.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="financing">
+    <div class="wrap fin">
+      <img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrrHPmPkrpGLi7YSqOa6WSmPyWK5hyQkC_Ry56LKesqKKVqP8Bnk7FNFBq3drzSYXbFEpLgHrU7FBjGgAcq9l3k2zdjwgSYVSgRLBuW8N5yIaenrnrXLkxwx20ViykDh7Y6e3prt8skUZN=w1100-h825-k-no" alt="Customer waiting area at Transmission City">
+      <div>
+        <h2>Big repair, tight budget? Let's talk.</h2>
+        <p class="sub">A transmission job shouldn't take your car off the road for months. We work with customers on payment so you can get back to driving.</p>
+        <ul>
+          <li>Payment options for larger repairs</li>
+          <li>Clear quote before any work starts</li>
+          <li>Comfortable waiting room while we diagnose</li>
+        </ul>
+        <a class="btn amber" href="tel:+15592513300">Ask about financing</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <h2>370+ reviews from Fresno drivers</h2>
+      <p class="sub">Here's what people say on Google.</p>
+      <div class="reviews">
+        <blockquote><p>“The Dealership couldn't figure out what was wrong with my transmission. I was recommended to Transmission City, and good thing I did.”</p><cite><b>★★★★★</b> Danny S.</cite></blockquote>
+        <blockquote><p>“Tony and Tony Jr. were very kind and fixed my 1997 Chevrolet Truck 1500 Transmission, Alignment, and took care of the check engine light.”</p><cite><b>★★★★★</b> Vincente F.</cite></blockquote>
+        <blockquote><p>“My van has never ran better!! They kept me informed from start to finish. I recommend them highly!”</p><cite><b>★★★★★</b> Ruthina E.</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap visit">
+      <div class="card">
+        <span class="cond" style="color:var(--amber);font-weight:600">Visit the shop</span>
+        <p class="addr">509 N Maple Ave<br>Fresno, CA 93702</p>
+        <table id="hours">
+          <tr data-d="1"><td>Monday</td><td>7:00 AM – 4:00 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>7:00 AM – 4:00 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>7:00 AM – 4:00 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>7:00 AM – 4:00 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>7:00 AM – 4:00 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>Closed</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <a class="btn amber" href="tel:+15592513300" style="width:100%">Call (559) 251-3300</a>
+      </div>
+      <iframe title="Map to Transmission City" loading="lazy" src="https://www.google.com/maps?q=509+N+Maple+Ave,+Fresno,+CA+93702&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  © <span id="y"></span> Transmission City · 509 N Maple Ave, Fresno, CA 93702 · (559) 251-3300<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+
+<a class="sticky-call" href="tel:+15592513300">Call now · (559) 251-3300</a>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>
