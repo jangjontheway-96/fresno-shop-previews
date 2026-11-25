@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Allstar Repair — Concept Preview</title>
+<meta name="description" content="Concept website preview for Allstar Repair, 5827 E Clinton Ave, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#121417; --panel:#1b1e22; --line:#2c3036; --text:#eef0f2; --muted:#9aa1a9; --amber:#ff4d3d; --amber-ink:#111; --light:#f6f4ef; --light-ink:#1a1c1f; --light-muted:#5b6068;}
+  *{box-sizing:border-box;margin:0} html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.55 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit} img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .preview{background:var(--amber);color:var(--amber-ink);text-align:center;padding:8px 16px;font-size:13px;font-weight:500}
+  header{position:sticky;top:0;z-index:20;background:rgba(18,20,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;text-decoration:none;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;line-height:1}
+  .logo span{color:var(--amber)}
+  .nav ul{display:flex;gap:26px;list-style:none;padding:0} .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  .nav .call{background:var(--amber);color:var(--amber-ink);font-weight:600;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  @media (max-width:780px){.nav ul{display:none}}
+  @media (max-width:420px){.logo{font-size:20px}.nav .call{padding:9px 12px;font-size:15px}}
+  .hero{border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:72px}
+  .hero.nophoto .wrap{grid-template-columns:1fr}
+  .kicker{color:var(--amber);font-size:18px;font-weight:600;margin-bottom:14px}
+  h1{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(44px,6.6vw,82px);line-height:.94}
+  h1 .amber{color:var(--amber)}
+  .lede{color:var(--muted);font-size:19px;max-width:44ch;margin:22px 0 30px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:17px}
+  .btn.amber{background:var(--amber);color:var(--amber-ink)} .btn.line{border:1.5px solid #4a5058}
+  .proof{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+  .proof div{border-left:2px solid var(--amber);padding-left:12px}
+  .proof b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:32px;line-height:1} .proof span{color:var(--muted);font-size:14px}
+  .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;padding-top:40px}}
+  section{padding:72px 0}
+  h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.5vw,52px);line-height:.98;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:56ch;margin-bottom:34px}
+  .signs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .sign{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .sign h3{font-size:18px;margin:0 0 4px;font-weight:600;color:var(--amber)} .sign p{color:var(--muted);font-size:15px}
+  @media (max-width:880px){.signs{grid-template-columns:1fr 1fr}} @media (max-width:520px){.signs{grid-template-columns:1fr}}
+  .light{background:var(--light);color:var(--light-ink)} .light .sub{color:var(--light-muted)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--light-ink)}
+  .svc{padding:24px 22px 26px 0;border-bottom:1px solid #d9d5cc}
+  .svc h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;line-height:1}
+  .svc p{color:var(--light-muted);margin-top:8px;font-size:15.5px;max-width:32ch}
+  @media (max-width:880px){.services{grid-template-columns:1fr 1fr}} @media (max-width:520px){.services{grid-template-columns:1fr}}
+  .fin{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .fin.nophoto{grid-template-columns:1fr}
+  .fin img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  .fin ul{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
+  .fin li{padding-left:28px;position:relative}
+  .fin li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:8px;border-left:3px solid var(--amber);border-bottom:3px solid var(--amber);transform:rotate(-45deg)}
+  @media (max-width:880px){.fin{grid-template-columns:1fr}}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  blockquote{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px} blockquote cite b{color:var(--amber);letter-spacing:2px}
+  @media (max-width:880px){.reviews{grid-template-columns:1fr}}
+  .visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .addr{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 18px}
+  table{width:100%;border-collapse:collapse;margin-bottom:22px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)} td:last-child{text-align:right;color:var(--muted)}
+  tr.today td{color:var(--amber);font-weight:600}
+  iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:12px;filter:invert(.9) hue-rotate(180deg) saturate(.6)}
+  @media (max-width:880px){.visit{grid-template-columns:1fr}}
+  footer{border-top:1px solid var(--line);padding:32px 0 110px;color:var(--muted);font-size:14px}
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--amber);color:var(--amber-ink);text-align:center;padding:16px;border-radius:10px;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:30}
+  @media (max-width:780px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+<div class="preview">Concept preview made for Allstar Repair. Not the official website and not affiliated with the business.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#">Allstar <span>Repair</span></a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="call" href="tel:+15593479227">(559) 347-9227</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div>
+      <p class="kicker">Performance &amp; repair · 5827 E Clinton Ave</p>
+      <h1>Fair prices.<br>Fast turnaround.<br><span class="amber">Ask for Ben.</span></h1>
+      <p class="lede">A local performance and repair shop in east Fresno. Brakes, fluids, transmission service and performance upgrades, explained in plain language and priced fairly.</p>
+      <div class="btns"><a class="btn amber" href="tel:+15593479227">Call (559) 347-9227</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=5827+E+Clinton+Ave,+Fresno,+CA+93727" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="proof"><div><b>4.7★</b><span>Google rating</span></div><div><b>113</b><span>Google reviews</span></div><div><b>Mon–Fri</b><span>9 AM – 6 PM</span></div></div>
+    </div>
+    <div class="hero-img"><img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RjLcoRC5lPCMnXV4jByGVEVluKxNSixUDNo0WXtaTbVOLw6Gyztjqt4VGN8Y7BvtbBZJj4cChmyN466wOw6YZNuzd6qZICmbKXuHwq8JuZkJ4hvZs_UBhfjHfi3pwBy22RKUdgMQ=w1100-h825-k-no" alt="Allstar Repair"></div>
+  </div></div>
+  <section><div class="wrap"><h2>Why drivers switch to us</h2><p class="sub">What customers mention most in their reviews.</p><div class="signs"><div class="sign"><h3>Fair pricing</h3><p>Mentioned in 10+ reviews.</p></div><div class="sign"><h3>Honest staff</h3><p>No talking down, no surprise charges.</p></div><div class="sign"><h3>Clean &amp; cool lobby</h3><p>Free snacks, water and phone charging.</p></div><div class="sign"><h3>Speedy turnaround</h3><p>Back on the road quickly.</p></div></div></div></section>
+  <section id="services" class="light"><div class="wrap"><h2>What we do</h2><p class="sub">We explain every option before any work starts.</p><div class="services"><div class="svc"><h3>Brakes</h3><p>Inspections, pads, rotors and brake fluid flushes.</p></div><div class="svc"><h3>Fluid services</h3><p>Brake, coolant and transmission fluid service.</p></div><div class="svc"><h3>Transmission service</h3><p>Service and leak inspections.</p></div><div class="svc"><h3>Tires &amp; rotations</h3><p>Rotations and tire work while you wait.</p></div><div class="svc"><h3>Performance upgrades</h3><p>Bolt-ons, tuning prep and upgrades done right.</p></div><div class="svc"><h3>General repair</h3><p>Diagnosis and repair for everyday drivers.</p></div></div></div></section>
+  <section><div class="wrap fin"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RShin_GG3LKVYJ8UyDi2JH1cJ-x6C5kPpF93ZMf16K_n59fAaeRV_9Z4FR7itah-M-Rz514bVrlg7EoXJnd2TZupZkkAx27OCVyAJPDyIQFbSxYRoQGf1YxRa5zbekT1ki95De=w1100-h825-k-no" alt="Allstar Repair"><div><h2>A shop you&#x27;ll actually want to wait in.</h2><p class="sub">Cool lobby, clean restroom, free snacks, water and phone charging while we work.</p><ul><li>Clear pricing before work starts</li><li>Compared favorably to dealership prices</li><li>Friendly staff who explain everything</li></ul><a class="btn amber" href="tel:+15593479227">Call (559) 347-9227</a></div></div></section>
+  <section id="reviews" style="padding-top:0"><div class="wrap"><h2>113 reviews from Fresno drivers</h2><p class="sub">Here's what people say on Google.</p><div class="reviews"><blockquote><p>“Ben (the owner) is very personable and down to earth. The prices are fair, and I don&#x27;t feel like I&#x27;m being overcharged.”</p><cite><b>★★★★★</b> Mariss D.</cite></blockquote><blockquote><p>“Was very surprised how this place was really clean for being an automotive shop and lobby was nice and cool while it was 100° outside.”</p><cite><b>★★★★★</b> Lue H.</cite></blockquote><blockquote><p>“This place works in a timely manner and the customer service is exceptional.”</p><cite><b>★★★★★</b> Oscar Q.</cite></blockquote></div></div></section>
+  <section id="visit" style="padding-top:0"><div class="wrap visit">
+    <div class="card"><span style="color:var(--amber);font-weight:600;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase">Visit the shop</span>
+      <p class="addr">5827 E Clinton Ave<br>Fresno, CA 93727</p>
+      <table id="hours"><tr data-d="1"><td>Monday</td><td>9:00 AM – 6:00 PM</td></tr>
+<tr data-d="2"><td>Tuesday</td><td>9:00 AM – 6:00 PM</td></tr>
+<tr data-d="3"><td>Wednesday</td><td>9:00 AM – 6:00 PM</td></tr>
+<tr data-d="4"><td>Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+<tr data-d="5"><td>Friday</td><td>9:00 AM – 6:00 PM</td></tr>
+<tr data-d="6"><td>Saturday</td><td>Closed</td></tr>
+<tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+      <a class="btn amber" href="tel:+15593479227" style="width:100%">Call (559) 347-9227</a></div>
+    <iframe title="Map to Allstar Repair" loading="lazy" src="https://www.google.com/maps?q=5827+E+Clinton+Ave,+Fresno,+CA+93727&output=embed"></iframe>
+  </div></section>
+</main>
+<footer class="wrap">
+  © <span id="y"></span> Allstar Repair · 5827 E Clinton Ave, Fresno, CA 93727 · (559) 347-9227<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+<a class="sticky-call" href="tel:+15593479227">Call now · (559) 347-9227</a>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>

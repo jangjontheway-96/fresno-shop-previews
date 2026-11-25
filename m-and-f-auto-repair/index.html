@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>M &amp; F Auto Repair — Concept Preview</title>
+<meta name="description" content="Concept website preview for M &amp; F Auto Repair, 3324 E Belmont Ave #2011, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#121417; --panel:#1b1e22; --line:#2c3036; --text:#eef0f2; --muted:#9aa1a9; --amber:#4da3ff; --amber-ink:#111; --light:#f6f4ef; --light-ink:#1a1c1f; --light-muted:#5b6068;}
+  *{box-sizing:border-box;margin:0} html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.55 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit} img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .preview{background:var(--amber);color:var(--amber-ink);text-align:center;padding:8px 16px;font-size:13px;font-weight:500}
+  header{position:sticky;top:0;z-index:20;background:rgba(18,20,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;text-decoration:none;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;line-height:1}
+  .logo span{color:var(--amber)}
+  .nav ul{display:flex;gap:26px;list-style:none;padding:0} .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  .nav .call{background:var(--amber);color:var(--amber-ink);font-weight:600;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  @media (max-width:780px){.nav ul{display:none}}
+  @media (max-width:420px){.logo{font-size:20px}.nav .call{padding:9px 12px;font-size:15px}}
+  .hero{border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:72px}
+  .hero.nophoto .wrap{grid-template-columns:1fr}
+  .kicker{color:var(--amber);font-size:18px;font-weight:600;margin-bottom:14px}
+  h1{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(44px,6.6vw,82px);line-height:.94}
+  h1 .amber{color:var(--amber)}
+  .lede{color:var(--muted);font-size:19px;max-width:44ch;margin:22px 0 30px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:17px}
+  .btn.amber{background:var(--amber);color:var(--amber-ink)} .btn.line{border:1.5px solid #4a5058}
+  .proof{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+  .proof div{border-left:2px solid var(--amber);padding-left:12px}
+  .proof b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:32px;line-height:1} .proof span{color:var(--muted);font-size:14px}
+  .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;padding-top:40px}}
+  section{padding:72px 0}
+  h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.5vw,52px);line-height:.98;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:56ch;margin-bottom:34px}
+  .signs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .sign{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .sign h3{font-size:18px;margin:0 0 4px;font-weight:600;color:var(--amber)} .sign p{color:var(--muted);font-size:15px}
+  @media (max-width:880px){.signs{grid-template-columns:1fr 1fr}} @media (max-width:520px){.signs{grid-template-columns:1fr}}
+  .light{background:var(--light);color:var(--light-ink)} .light .sub{color:var(--light-muted)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--light-ink)}
+  .svc{padding:24px 22px 26px 0;border-bottom:1px solid #d9d5cc}
+  .svc h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;line-height:1}
+  .svc p{color:var(--light-muted);margin-top:8px;font-size:15.5px;max-width:32ch}
+  @media (max-width:880px){.services{grid-template-columns:1fr 1fr}} @media (max-width:520px){.services{grid-template-columns:1fr}}
+  .fin{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .fin.nophoto{grid-template-columns:1fr}
+  .fin img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  .fin ul{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
+  .fin li{padding-left:28px;position:relative}
+  .fin li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:8px;border-left:3px solid var(--amber);border-bottom:3px solid var(--amber);transform:rotate(-45deg)}
+  @media (max-width:880px){.fin{grid-template-columns:1fr}}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  blockquote{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px} blockquote cite b{color:var(--amber);letter-spacing:2px}
+  @media (max-width:880px){.reviews{grid-template-columns:1fr}}
+  .visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .addr{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 18px}
+  table{width:100%;border-collapse:collapse;margin-bottom:22px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)} td:last-child{text-align:right;color:var(--muted)}
+  tr.today td{color:var(--amber);font-weight:600}
+  iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:12px;filter:invert(.9) hue-rotate(180deg) saturate(.6)}
+  @media (max-width:880px){.visit{grid-template-columns:1fr}}
+  footer{border-top:1px solid var(--line);padding:32px 0 110px;color:var(--muted);font-size:14px}
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--amber);color:var(--amber-ink);text-align:center;padding:16px;border-radius:10px;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:30}
+  @media (max-width:780px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+<div class="preview">Concept preview made for M &amp; F Auto Repair. Not the official website and not affiliated with the business.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#">M &amp; F <span>Auto Repair</span></a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="call" href="tel:+15595156117">(559) 515-6117</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div>
+      <p class="kicker">Auto repair · 3324 E Belmont Ave</p>
+      <h1>Honest quotes.<br>Guaranteed work.<br><span class="amber">Ask for Edwin.</span></h1>
+      <p class="lede">Transmissions, diagnostics and general repair with a fair quote up front and updates while we work. We guarantee our work.</p>
+      <div class="btns"><a class="btn amber" href="tel:+15595156117">Call (559) 515-6117</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=3324+E+Belmont+Ave+%232011,+Fresno,+CA+93702" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="proof"><div><b>4.8★</b><span>Google rating</span></div><div><b>20</b><span>Google reviews</span></div><div><b>Mon–Sat</b><span>Sat 10 AM – 2 PM</span></div></div>
+    </div>
+    <div class="hero-img"><img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QthtyKkEK2DKhf6el95g2ech7WPDUccv2flTeXf6xGvtGNtQHxPOyowRkqZ_gfvjl5AhC81cb3wSeJ2N2V6xoSyykVwL-6f5wHxMbCq5fVxLJ9gLJU_C9g3jhknHQ9Jx-GyvU=w1100-h825-k-no" alt="M &amp; F Auto Repair"></div>
+  </div></div>
+  <section><div class="wrap"><h2>Bring it in if you notice</h2><p class="sub">Small noises turn into big bills when they&#x27;re ignored.</p><div class="signs"><div class="sign"><h3>Grinding noises</h3><p>Especially when accelerating or braking.</p></div><div class="sign"><h3>Won&#x27;t start</h3><p>Starting and electrical problems.</p></div><div class="sign"><h3>Shifting problems</h3><p>Slipping, hard shifts or delays.</p></div><div class="sign"><h3>Warning lights</h3><p>Check engine or other dash lights.</p></div></div></div></section>
+  <section id="services" class="light"><div class="wrap"><h2>What we do</h2><p class="sub">We explain every option before any work starts.</p><div class="services"><div class="svc"><h3>Transmission repair</h3><p>Repair and replacement, quoted up front.</p></div><div class="svc"><h3>Diagnostics</h3><p>We find the problem fast.</p></div><div class="svc"><h3>No-start repair</h3><p>Starting, charging and electrical.</p></div><div class="svc"><h3>Brakes &amp; noises</h3><p>Grinding, squealing and vibration.</p></div><div class="svc"><h3>General repair</h3><p>Cars and trucks, all makes.</p></div><div class="svc"><h3>Guaranteed work</h3><p>We stand behind every repair.</p></div></div></div></section>
+  <section><div class="wrap fin"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWzIdzGqM0X7FRBMBzIk6NEif11-TAFsu2UzBw73Wv7DvLBCkjWjEqAT0FILO8hm_VdVpXkg3JXPaR4qOjUWrzpnIps4buO556Ed2_gJiK7mKsWpX46lZV56YBkwn5MaBkPEg6=w1100-h825-k-no" alt="M &amp; F Auto Repair"><div><h2>Know the price before we start.</h2><p class="sub">We quote first, keep you updated while your car is here, and guarantee the work.</p><ul><li>Up-front quotes</li><li>Updates during the repair</li><li>Work guaranteed</li></ul><a class="btn amber" href="tel:+15595156117">Call (559) 515-6117</a></div></div></section>
+  <section id="reviews" style="padding-top:0"><div class="wrap"><h2>20 reviews from Fresno drivers</h2><p class="sub">Here's what people say on Google.</p><div class="reviews"><blockquote><p>“They were professional and quoted good pricing. Also kept me up to date on my vehicle and they also guarantee their work.”</p><cite><b>★★★★★</b> Javier S.</cite></blockquote><blockquote><p>“Edwin is so honest and very nice… I thought it was going to cost $2000, that&#x27;s what another mechanic was saying, it cost me $1200.”</p><cite><b>★★★★★</b> Consuelo G.</cite></blockquote><blockquote><p>“Friendly and professional, found the problem very fast and took care of it in no time and the best part was the unbelievable price.”</p><cite><b>★★★★★</b> Brandon J.</cite></blockquote></div></div></section>
+  <section id="visit" style="padding-top:0"><div class="wrap visit">
+    <div class="card"><span style="color:var(--amber);font-weight:600;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase">Visit the shop</span>
+      <p class="addr">3324 E Belmont Ave #2011<br>Fresno, CA 93702</p>
+      <table id="hours"><tr data-d="1"><td>Monday</td><td>10:00 AM – 5:30 PM</td></tr>
+<tr data-d="2"><td>Tuesday</td><td>10:00 AM – 5:30 PM</td></tr>
+<tr data-d="3"><td>Wednesday</td><td>10:00 AM – 5:30 PM</td></tr>
+<tr data-d="4"><td>Thursday</td><td>10:00 AM – 5:30 PM</td></tr>
+<tr data-d="5"><td>Friday</td><td>10:00 AM – 5:30 PM</td></tr>
+<tr data-d="6"><td>Saturday</td><td>10:00 AM – 2:00 PM</td></tr>
+<tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+      <a class="btn amber" href="tel:+15595156117" style="width:100%">Call (559) 515-6117</a></div>
+    <iframe title="Map to M &amp; F Auto Repair" loading="lazy" src="https://www.google.com/maps?q=3324+E+Belmont+Ave+%232011,+Fresno,+CA+93702&output=embed"></iframe>
+  </div></section>
+</main>
+<footer class="wrap">
+  © <span id="y"></span> M &amp; F Auto Repair · 3324 E Belmont Ave #2011, Fresno, CA 93702 · (559) 515-6117<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+<a class="sticky-call" href="tel:+15595156117">Call now · (559) 515-6117</a>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>

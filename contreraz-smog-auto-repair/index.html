@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Contreraz Smog &amp; Auto Repair — Concept Preview</title>
+<meta name="description" content="Concept website preview for Contreraz Smog &amp; Auto Repair, 4444 N Blackstone Ave, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#121417; --panel:#1b1e22; --line:#2c3036; --text:#eef0f2; --muted:#9aa1a9; --amber:#3ccfb0; --amber-ink:#111; --light:#f6f4ef; --light-ink:#1a1c1f; --light-muted:#5b6068;}
+  *{box-sizing:border-box;margin:0} html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.55 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit} img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .preview{background:var(--amber);color:var(--amber-ink);text-align:center;padding:8px 16px;font-size:13px;font-weight:500}
+  header{position:sticky;top:0;z-index:20;background:rgba(18,20,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;text-decoration:none;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;line-height:1}
+  .logo span{color:var(--amber)}
+  .nav ul{display:flex;gap:26px;list-style:none;padding:0} .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  .nav .call{background:var(--amber);color:var(--amber-ink);font-weight:600;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  @media (max-width:780px){.nav ul{display:none}}
+  @media (max-width:420px){.logo{font-size:20px}.nav .call{padding:9px 12px;font-size:15px}}
+  .hero{border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:72px}
+  .hero.nophoto .wrap{grid-template-columns:1fr}
+  .kicker{color:var(--amber);font-size:18px;font-weight:600;margin-bottom:14px}
+  h1{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(44px,6.6vw,82px);line-height:.94}
+  h1 .amber{color:var(--amber)}
+  .lede{color:var(--muted);font-size:19px;max-width:44ch;margin:22px 0 30px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:17px}
+  .btn.amber{background:var(--amber);color:var(--amber-ink)} .btn.line{border:1.5px solid #4a5058}
+  .proof{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+  .proof div{border-left:2px solid var(--amber);padding-left:12px}
+  .proof b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:32px;line-height:1} .proof span{color:var(--muted);font-size:14px}
+  .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;padding-top:40px}}
+  section{padding:72px 0}
+  h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.5vw,52px);line-height:.98;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:56ch;margin-bottom:34px}
+  .signs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .sign{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .sign h3{font-size:18px;margin:0 0 4px;font-weight:600;color:var(--amber)} .sign p{color:var(--muted);font-size:15px}
+  @media (max-width:880px){.signs{grid-template-columns:1fr 1fr}} @media (max-width:520px){.signs{grid-template-columns:1fr}}
+  .light{background:var(--light);color:var(--light-ink)} .light .sub{color:var(--light-muted)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--light-ink)}
+  .svc{padding:24px 22px 26px 0;border-bottom:1px solid #d9d5cc}
+  .svc h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;line-height:1}
+  .svc p{color:var(--light-muted);margin-top:8px;font-size:15.5px;max-width:32ch}
+  @media (max-width:880px){.services{grid-template-columns:1fr 1fr}} @media (max-width:520px){.services{grid-template-columns:1fr}}
+  .fin{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .fin.nophoto{grid-template-columns:1fr}
+  .fin img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+  .fin ul{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
+  .fin li{padding-left:28px;position:relative}
+  .fin li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:8px;border-left:3px solid var(--amber);border-bottom:3px solid var(--amber);transform:rotate(-45deg)}
+  @media (max-width:880px){.fin{grid-template-columns:1fr}}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  blockquote{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px} blockquote cite b{color:var(--amber);letter-spacing:2px}
+  @media (max-width:880px){.reviews{grid-template-columns:1fr}}
+  .visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .addr{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 18px}
+  table{width:100%;border-collapse:collapse;margin-bottom:22px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)} td:last-child{text-align:right;color:var(--muted)}
+  tr.today td{color:var(--amber);font-weight:600}
+  iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:12px;filter:invert(.9) hue-rotate(180deg) saturate(.6)}
+  @media (max-width:880px){.visit{grid-template-columns:1fr}}
+  footer{border-top:1px solid var(--line);padding:32px 0 110px;color:var(--muted);font-size:14px}
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--amber);color:var(--amber-ink);text-align:center;padding:16px;border-radius:10px;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:30}
+  @media (max-width:780px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+<div class="preview">Concept preview made for Contreraz Smog &amp; Auto Repair. Not the official website and not affiliated with the business.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#">Contreraz <span>Smog &amp; Repair</span></a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="call" href="tel:+15592440900">(559) 244-0900</a>
+</div></header>
+<main>
+  <div class="hero nophoto"><div class="wrap">
+    <div>
+      <p class="kicker">Smog check &amp; repair · 4444 N Blackstone Ave</p>
+      <h1>Pass your smog.<br><span class="amber">Fix what failed.</span></h1>
+      <p class="lede">Smog inspections, smog repair, check engine lights and A/C service on Blackstone. We check your car&#x27;s readiness monitors before the test so you don&#x27;t pay for a smog you can&#x27;t pass.</p>
+      <div class="btns"><a class="btn amber" href="tel:+15592440900">Call (559) 244-0900</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=4444+N+Blackstone+Ave,+Fresno,+CA+93726" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="proof"><div><b>4.0★</b><span>Google rating</span></div><div><b>210</b><span>Google reviews</span></div><div><b>Mon–Sat</b><span>Sat until noon</span></div></div>
+    </div>
+    
+  </div></div>
+  <section><div class="wrap"><h2>Before you come in</h2><p class="sub">A few tips that save you a second trip.</p><div class="signs"><div class="sign"><h3>Don&#x27;t clear codes</h3><p>Clearing your OBD2 codes right before a test usually means a re-test.</p></div><div class="sign"><h3>Drive it first</h3><p>A normal drive gets the monitors ready.</p></div><div class="sign"><h3>Check engine on?</h3><p>Have us diagnose it before the smog test.</p></div><div class="sign"><h3>Ask about vouchers</h3><p>Customers mention Valley Clean Air vouchers and free smog checks.</p></div></div></div></section>
+  <section id="services" class="light"><div class="wrap"><h2>What we do</h2><p class="sub">We explain every option before any work starts.</p><div class="services"><div class="svc"><h3>Smog inspections</h3><p>Walk in and we&#x27;ll take you through the whole process.</p></div><div class="svc"><h3>Smog repair</h3><p>Failed your smog? We find the cause and fix it.</p></div><div class="svc"><h3>Check engine light</h3><p>Scan, diagnose and repair.</p></div><div class="svc"><h3>A/C service</h3><p>A/C repair and recharge before the Fresno heat.</p></div><div class="svc"><h3>Readiness check</h3><p>We verify your emission monitors before running the test.</p></div><div class="svc"><h3>Smog vouchers</h3><p>Ask about Valley Clean Air program vouchers.</p></div></div></div></section>
+  
+  <section id="reviews" style="padding-top:72px"><div class="wrap"><h2>210 reviews from Fresno drivers</h2><p class="sub">Here's what people say on Google.</p><div class="reviews"><blockquote><p>“The technician was honest, professional, and took the time to connect the diagnostic scanner to verify that all of my vehicle&#x27;s emissions monitors were ready before performing the test.”</p><cite><b>★★★★★</b> Ismael M.</cite></blockquote><blockquote><p>“I didn&#x27;t have an appointment, walked in, was greeted and walked through the entire process.”</p><cite><b>★★★★★</b> Elsie M.</cite></blockquote><blockquote><p>“The process was hassle-free, and I got my voucher for free. The smog test was quick and easy, and I passed with no issues.”</p><cite><b>★★★★★</b> Ricky G.</cite></blockquote></div></div></section>
+  <section id="visit" style="padding-top:0"><div class="wrap visit">
+    <div class="card"><span style="color:var(--amber);font-weight:600;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase">Visit the shop</span>
+      <p class="addr">4444 N Blackstone Ave<br>Fresno, CA 93726</p>
+      <table id="hours"><tr data-d="1"><td>Monday</td><td>8:00 AM – 3:00 PM</td></tr>
+<tr data-d="2"><td>Tuesday</td><td>8:00 AM – 3:00 PM</td></tr>
+<tr data-d="3"><td>Wednesday</td><td>8:00 AM – 3:00 PM</td></tr>
+<tr data-d="4"><td>Thursday</td><td>8:00 AM – 3:00 PM</td></tr>
+<tr data-d="5"><td>Friday</td><td>8:00 AM – 3:00 PM</td></tr>
+<tr data-d="6"><td>Saturday</td><td>8:00 AM – 12:00 PM</td></tr>
+<tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+      <a class="btn amber" href="tel:+15592440900" style="width:100%">Call (559) 244-0900</a></div>
+    <iframe title="Map to Contreraz Smog &amp; Auto Repair" loading="lazy" src="https://www.google.com/maps?q=4444+N+Blackstone+Ave,+Fresno,+CA+93726&output=embed"></iframe>
+  </div></section>
+</main>
+<footer class="wrap">
+  © <span id="y"></span> Contreraz Smog &amp; Auto Repair · 4444 N Blackstone Ave, Fresno, CA 93726 · (559) 244-0900<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+<a class="sticky-call" href="tel:+15592440900">Call now · (559) 244-0900</a>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>

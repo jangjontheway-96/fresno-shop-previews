@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zarate&#x27;s Auto Center — Concept Preview</title>
+<meta name="description" content="Concept website preview for Zarate&#x27;s Auto Center, 2614 S Cedar Ave, Fresno CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#f4f2ee; --ink:#16130f; --muted:#5d5649; --line:#d9d3c7; --red:#1f5fa8; --card:#fffdf9;}
+  *{box-sizing:border-box;margin:0} html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit} img{display:block;max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.02em}
+  .preview{background:var(--ink);color:#e9e3d6;text-align:center;padding:8px 16px;font-size:13px} .preview b{color:#fff}
+  header{border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+  .logo{font-weight:900;font-size:20px;letter-spacing:-.02em;text-decoration:none;line-height:1}
+  .logo small{display:block;font:500 11px/1.4 "IBM Plex Mono",monospace;color:var(--muted);letter-spacing:.04em}
+  .nav a.call{background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px;white-space:nowrap}
+  .nav ul{display:flex;gap:24px;list-style:none;padding:0} .nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+  @media (max-width:760px){.nav ul{display:none}}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:64px}
+  .hero.nophoto{grid-template-columns:1fr}
+  .hero h1{font-weight:900;font-size:clamp(38px,5.6vw,64px);line-height:1;letter-spacing:-.035em;text-wrap:balance}
+  .hero h1 em{font-style:normal;color:var(--red)}
+  .hero p.lede{font-size:19px;color:var(--muted);margin:20px 0 28px;max-width:38ch}
+  .rating{display:flex;align-items:center;gap:10px;margin-bottom:22px} .stars{color:var(--red);letter-spacing:2px;font-size:18px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:17px}
+  .btn.primary{background:var(--red);color:#fff} .btn.ghost{border:1.5px solid var(--ink)}
+  .hero figure{position:relative} .hero figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+  .hero figcaption{position:absolute;left:14px;bottom:14px;background:var(--card);padding:10px 14px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+  .hero figcaption strong{display:block;font-size:15px}
+  @media (max-width:860px){.hero{grid-template-columns:1fr;gap:32px;padding-top:36px;padding-bottom:44px}}
+  @media (max-width:420px){.logo{font-size:17px}.logo small{display:none}.nav a.call{padding:9px 12px;font-size:15px}}
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  .eyebrow{color:var(--red);margin-bottom:10px;display:block}
+  h2{font-weight:900;font-size:clamp(30px,4vw,44px);letter-spacing:-.03em;line-height:1.05;margin-bottom:28px;max-width:22ch;text-wrap:balance}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .svc{background:var(--card);padding:26px 24px} .svc h3{font-size:20px;margin:0 0 6px;letter-spacing:-.01em} .svc p{color:var(--muted);font-size:15.5px}
+  @media (max-width:860px){.services{grid-template-columns:1fr 1fr}} @media (max-width:520px){.services{grid-template-columns:1fr}}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  blockquote{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+  blockquote cite{font-style:normal;color:var(--muted);font-size:14px}
+  @media (max-width:860px){.reviews{grid-template-columns:1fr}}
+  .shop{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .shop img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+  .visit{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:stretch}
+  .hours{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .hours table{width:100%;border-collapse:collapse;margin:14px 0 22px}
+  .hours td{padding:9px 0;border-bottom:1px dashed var(--line)} .hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hours .today td{font-weight:700} .addr{font-size:19px;font-weight:700;line-height:1.35}
+  iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:12px;filter:grayscale(.25)}
+  @media (max-width:860px){.visit{grid-template-columns:1fr}}
+  .cta{background:var(--ink);color:#f4f0e8;border-radius:16px;padding:44px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .cta h2{margin:0;color:#fff}
+  footer{padding:36px 0 110px;color:var(--muted);font-size:14px}
+  .sticky-call{position:fixed;left:12px;right:12px;bottom:12px;display:none;background:var(--red);color:#fff;text-align:center;padding:16px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:10}
+  @media (max-width:760px){.sticky-call{display:block}}
+</style>
+</head>
+<body>
+<div class="preview"><b>Concept preview</b> made for Zarate&#x27;s Auto Center. Not the official website and not affiliated with the business.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#">Zarate&#x27;s Auto Center<small>2614 S CEDAR AVE · FRESNO</small></a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#visit">Hours &amp; location</a></li></ul>
+  <a class="call" href="tel:+15592684656">(559) 268-4656</a>
+</div></header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4.5</b> from 328 Google reviews</span></div>
+      <h1>Smog checks and repairs <em>done right</em> the first time.</h1>
+      <p class="lede">Fast smog checks, check engine diagnosis and the repairs other shops couldn&#x27;t figure out. Our front desk walks you through every step and asks before any work starts.</p>
+      <div class="btns"><a class="btn primary" href="tel:+15592684656">Call (559) 268-4656</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=2614+S+Cedar+Ave,+Fresno,+CA+93725" target="_blank" rel="noopener">Get directions</a></div>
+    </div>
+    <figure><img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TioosHC4sCxDPIgDYlNKO9RiQvHSfulZBSKBRjFCxMImaaOO-Olfnf6cGvPR6xSf7drXPx80VUeMzZ9o_F6coWYDN4lep6mFIA3ZDapn6ryfgLA4QJxwVD2_TS0LnBIbfdoxxS=w1100-h825-k-no" alt="Zarate&#x27;s Auto Center"><figcaption><strong>Open Mon–Fri</strong><span class="mono">8:00 AM – 5:00 PM</span></figcaption></figure>
+  </div>
+  <section id="services"><div class="wrap"><span class="eyebrow mono">WHAT WE DO</span><h2>Services</h2><div class="services"><div class="svc"><h3>Smog checks</h3><p>Quick, fairly priced smog inspections for your DMV renewal.</p></div><div class="svc"><h3>Check engine light</h3><p>We read the codes and find the real cause before we fix anything.</p></div><div class="svc"><h3>Smog-related repairs</h3><p>Failed your smog? We repair it and get you re-tested.</p></div><div class="svc"><h3>Heating &amp; A/C</h3><p>Heater cores, A/C and climate problems handled in-house.</p></div><div class="svc"><h3>General repair</h3><p>Mechanical work on cars, trucks and RVs.</p></div><div class="svc"><h3>Clear communication</h3><p>We call for your OK before any work, and you get updates along the way.</p></div></div></div></section>
+  <section id="reviews"><div class="wrap"><span class="eyebrow mono">FROM GOOGLE REVIEWS</span><h2>What customers say.</h2><div class="reviews"><blockquote><p>“They fixed something 3 other mechanics couldn&#x27;t figure out… super clear on their repairs and got permission for everything.”</p><cite>Alfredo · ★★★★★</cite></blockquote><blockquote><p>“A great place to get your smog check! They are very fast and efficient, with reasonable prices and a very friendly, helpful front desk staff.”</p><cite>Charlie · ★★★★★</cite></blockquote><blockquote><p>“Denise was a really big help with communicating on the step by step process to get my car taken care of.”</p><cite>Cristian G. · ★★★★★</cite></blockquote></div></div></section>
+  <section><div class="wrap"><span class="eyebrow mono">THE SHOP</span><h2>Clean lobby, friendly front desk, honest repairs.</h2><div class="shop"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9Z5v3Gwjcqm141_IBEEACmASsKGob4pw-gwfgyaAAVf0ivueEP2007jq4e92fFPZNl1ppUFVVzXp0z5Vxp8CnUkKAjCwdinC9QMT43u99iPbKKBLJWzAn3IDc5FYdgQAmLTwseL0xG0Y=w1100-h825-k-no" alt="Zarate&#x27;s Auto Center"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8TdIueuqrTLAJ0c87aYwE7rimw8fNRoyt9OyZj24-9lKZ8AjYXgG5zetAiK5TLzDOwaBnruNjyeSBAW6JH_w7QC4qm68e09jTMG02M7J6aaeoUKX6FvmxhTwcRMWgRF0_LLfgJv8sfsxJ=w1100-h825-k-no" alt="Zarate&#x27;s Auto Center"></div></div></section>
+  <section id="visit"><div class="wrap visit">
+    <div class="hours"><span class="eyebrow mono">HOURS &amp; LOCATION</span><p class="addr">2614 S Cedar Ave<br>Fresno, CA 93725</p>
+      <table id="hours"><tr data-d="1"><td>Monday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr data-d="2"><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr data-d="3"><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr data-d="4"><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr data-d="5"><td>Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr data-d="6"><td>Saturday</td><td>Closed</td></tr>
+<tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+      <a class="btn primary" href="tel:+15592684656">Call (559) 268-4656</a></div>
+    <iframe title="Map to Zarate&#x27;s Auto Center" loading="lazy" src="https://www.google.com/maps?q=2614+S+Cedar+Ave,+Fresno,+CA+93725&output=embed"></iframe>
+  </div></section>
+  <section><div class="wrap"><div class="cta"><h2>Questions? Give us a call.</h2><a class="btn primary" href="tel:+15592684656">(559) 268-4656</a></div></div></section>
+</main>
+<footer class="wrap">
+  © <span id="y"></span> Zarate&#x27;s Auto Center · 2614 S Cedar Ave, Fresno, CA 93725 · (559) 268-4656<br>
+  Concept preview built to show the owner a possible new website. Photos and reviews are from the business's public Google listing.
+</footer>
+<a class="sticky-call" href="tel:+15592684656">Call now · (559) 268-4656</a>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const row = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (row) row.classList.add('today');
+</script>
+</body>
+</html>
